@@ -16,4 +16,4 @@ var response = {
   "error_description" : "error_description",
   "error_uri" : "error_uri"
 }
-apic.error(error, http_status_code, error, error_description
+apic.error(error, http_status_code, error, error_description)
