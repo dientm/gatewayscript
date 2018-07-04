@@ -16,5 +16,5 @@ var response = {
   "error_description" : "error_description",
   "error_uri" : "error_uri"
 }
-apic.setvariable('message.body', {"hello" :"world"});
-apic.setvariable('message.headers', {"Content-Type":"application/json"});
+session.output.write('<test>this is some xml data</test>');
+apic.output('application/xml');
