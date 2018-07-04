@@ -16,5 +16,5 @@ var response = {
   "error_description" : "error_description",
   "error_uri" : "error_uri"
 }
-apim.setvariable('message.body', {"hello" :"world"});
-apim.setvariable('message.headers', {"Content-Type":"application/json"});
+apic.setvariable('message.body', {"hello" :"world"});
+apic.setvariable('message.headers', {"Content-Type":"application/json"});
