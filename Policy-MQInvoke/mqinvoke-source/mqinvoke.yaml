@@ -25,70 +25,24 @@ properties:
     $schema: "http://json-schema.org/draft-04/schema#"
     type: object
     properties:
-        queuemanager:
+        http_status_code:
             label: Queue Manager
             description: The Queue Manager Object or Queue Manager Group Object created in DataPower
             type: string
-        queue:
+        error:
             label: Queue name
             description: The Queue to be used
             type: string
-        replyqueue:
+        error_description:
             label: Reply Queue name
             description: "The Reply Queue to be used, leave blank if not Synchronous"
             type: string
-        backoutq:
+        error_uri:
             label: BackOut queue name
             description: "Backout Queue name"
             type: string
-        timeout:
-            label:  Timeout
-            description: Timeout in milliseconds
-            type: string
-        structid:
-            label:  StructureId
-            description:    The structure Id
-            type:   string
-            default: RFH
-        vrsn:
-            label:  Version
-            description:    Version
-            type:   string
-            default: MQRFH_VERSION_2
-        encoding:
-            label: Encoding
-            description:    The encoding
-            type:   string
-            default: MQENC_NATIVE
-        CodedCharSetId:
-            label:  CodedCharSetId
-            description:    The coded character
-            type:   string
-            default: MQCCSI_INHERIT
-        format:
-            label:  Format
-            type:   string
-            default: MQSTR
-        flags:
-            label:  Flags
-            description: The flags
-            type:   string
-            default: MQRFH_NONE
-        NameValueCCSID:
-            label:  Name Value CCSID
-            description: The coded character set ID (NameValueCCSID)
-            type:   string
-            default: "1208"
     required:
-      - queuemanager
-      - queue
-      - timeout
-      - vrsn
-      - encoding
-      - CodedCharSetId
-      - format
-      - flags
-      - NameValueCCSID
+      - http_status_code
 
 gateways:
     - datapower-gateway
