@@ -1,0 +1,43 @@
+#      Licensed Materials - Property of Five9
+#
+#      © Five9.vn 2018
+
+policy: 1.0.0
+
+info:
+  title: Error Handling
+  name: errorHandling
+  version: 1.1
+  description: Handle error
+  contact:
+        name: Mark Tran
+        email: dientm@five9.vn
+
+attach:
+    - rest
+
+properties:
+    $schema: "http://json-schema.org/draft-04/schema#"
+    type: object
+    properties:
+        http_status_code:
+            label: HTTP Status code
+            description: "The Queue Manager Object or Queue Manager Group Object created in DataPower"
+            type: string
+        error:
+            label: Error Code
+            description: "Short Description"
+            type: string
+        error_description:
+            label: Error Description
+            description: "Long description, human readable"
+            type: string
+        error_uri:
+            label:  Error URI
+            description: "URI to a detailed error description on the API developer website"
+            type:   string
+    required:
+      - http_status_code
+
+gateways:
+    - datapower-gateway
