@@ -16,5 +16,5 @@ var response = {
   "error_description" : "error_description",
   "error_uri" : "error_uri"
 }
-session.output.write('<test>this is some xml data</test>');
-apic.output('application/xml');
+session.output.write(JSON.stringify(response));
+apic.output('application/json');
