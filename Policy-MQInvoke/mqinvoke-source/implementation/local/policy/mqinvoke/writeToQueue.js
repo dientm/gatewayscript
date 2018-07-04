@@ -12,5 +12,6 @@ var response = {
   "error_description" : "error_description",
   "error_uri" : "error_uri"
 }
-apic.setvariable('message.body', response);
+apic.output('application/json');
+session.output.write(response);
 // apim.setvariable('message.headers', "json.headers");
