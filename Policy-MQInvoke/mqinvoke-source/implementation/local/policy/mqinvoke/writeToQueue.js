@@ -13,5 +13,5 @@ var response = {
   "error_uri" : "error_uri"
 }
 apic.output('application/json');
-session.output.write(response);
+session.output.write('{"response":"Hello World"}');
 // apim.setvariable('message.headers', "json.headers");
