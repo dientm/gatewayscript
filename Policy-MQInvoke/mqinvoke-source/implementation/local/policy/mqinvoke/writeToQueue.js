@@ -12,5 +12,5 @@ var response = {
   "error_description" : "error_description",
   "error_uri" : "error_uri"
 }
-apim.setvariable('message.body', response);
+apic.setvariable('message.body', response);
 // apim.setvariable('message.headers', "json.headers");
