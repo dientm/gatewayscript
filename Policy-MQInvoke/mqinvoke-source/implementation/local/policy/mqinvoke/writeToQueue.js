@@ -17,4 +17,3 @@ var response = {
   "error_uri" : "error_uri"
 }
 session.output.write(response);
-apic.output('application/json');
