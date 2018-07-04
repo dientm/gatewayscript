@@ -16,5 +16,4 @@ var response = {
   "error_description" : "error_description",
   "error_uri" : "error_uri"
 }
-// apic.error("name", "400", "abc", "Please refer to the datapower log for more information")
-session.output.write('{ "status": "created" }');
+apic.error("name", "400", "abc", "Please refer to the datapower log for more information")
