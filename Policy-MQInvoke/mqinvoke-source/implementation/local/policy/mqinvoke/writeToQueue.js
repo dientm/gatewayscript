@@ -16,4 +16,4 @@ var response = {
   "error_description" : "error_description",
   "error_uri" : "error_uri"
 }
-session.output.write(response);
+session.output.write("response");
