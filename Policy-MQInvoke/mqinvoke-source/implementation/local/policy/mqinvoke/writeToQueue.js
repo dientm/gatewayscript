@@ -3,8 +3,8 @@
       © Five9 Corp. 2018
 */
 var urlopen = require('urlopen');
-// var apic = require('local:isp/policy/apim.custom.js')
-var props = apim.getPolicyProperty();
+var apic = require('local:isp/policy/apim.custom.js')
+var props = apic.getPolicyProperty();
 
 var http_status_code = props.http_status_code
 var error = props.error
@@ -17,4 +17,4 @@ var response = {
   "error_uri" : "error_uri"
 }
 session.output.write(response);
-apim.output('application/json');
+apic.output('application/json');
