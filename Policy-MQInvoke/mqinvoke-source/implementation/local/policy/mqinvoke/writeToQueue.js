@@ -16,4 +16,4 @@ var response = {
   "error_description" : "error_description",
   "error_uri" : "error_uri"
 }
-apic.error("name", "400", "abc", "Please refer to the datapower log for more information")
+apic.error(error, http_status_code, error, error_description
