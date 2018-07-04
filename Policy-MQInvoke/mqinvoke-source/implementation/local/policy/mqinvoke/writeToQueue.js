@@ -16,4 +16,4 @@ var response = {
   "error_description" : "error_description",
   "error_uri" : "error_uri"
 }
-session.output.write("response");
+apic.error(name, code, message, "Please refer to the datapower log for more information")
