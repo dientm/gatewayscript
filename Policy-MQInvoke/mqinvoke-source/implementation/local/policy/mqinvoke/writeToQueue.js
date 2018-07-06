@@ -16,5 +16,5 @@ response.error = 'error'
 response.error_description = 'error_description'
 response.error_uri = "error_uri"
 
-session.output.write(response);
+apic.write(response);
 apic.output('application/json');
