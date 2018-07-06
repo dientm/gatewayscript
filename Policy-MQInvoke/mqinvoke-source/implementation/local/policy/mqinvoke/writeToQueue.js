@@ -11,7 +11,7 @@ var response = {
   "error_uri" : "error_uri"
 }
 
-
-console.log(response);
-apic.output('application/json');
-session.output.write(JSON.parse(response));
+apic.setvariable('message.body', response);
+// console.log(response);
+// apic.output('application/json');
+// session.output.write(JSON.parse(response));
